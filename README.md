@@ -1,5 +1,6 @@
 #Filterscript para enviar webhook a discord fácilmente desde SAMP.
 
+##Este filterscript es gratuito, PROHIBIDO vender.
 
 Para enviar un mensaje a discord usa:
 ```c
@@ -16,13 +17,13 @@ MensajeDiscord("Titulo", "Cuerpo del mensaje", WEBHOOK_CANAL_DUDAS, SERVER_NAME)
 ```
 
 En el link del webhook no insertar el enlace completo, solamente usa los parámetros necesarios, por ejemplo:
-Si el webhook es: https://discord.com/api/webhooks/1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6fuQBzpg40zKQwiLN3SYur9OeKWyJbq21At6Y
+Si el webhook es: ```https://discord.com/api/webhooks/1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6fuQBzpg40zKQwiLN3SYur9OeKWyJbq21At6Y```
 Solo debes usar esta parte:  ```1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6fuQBzpg40zKQwiLN3SYur9OeKWyJbq21At6Y ```
 
 
 Puedes usar varios webhooks y usar el mismo nombre del servidor fácilmente definiendolos, por ejemplo:
  ```c
-#define MensajeDiscord(%0,%1,%2,%3) CallRemoteFunction(%0, "ssss", %1, %2,%3)
+#define MensajeDiscord(%0,%1,%2,%3) CallRemoteFunction("MensajeDiscord", "ssss",%0,%1,%2,%3)
 #define WEBHOOK_CANAL_DUDAS "1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6fuQBzpg40zKQwiLN3SYur9OeKWyJbq21At6Y"
 #define SERVER_NAME "Mi gran servidor RP"
 
