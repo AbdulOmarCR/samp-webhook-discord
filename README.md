@@ -11,12 +11,12 @@ CallRemoteFunction("MensajeDiscord", "ssss", "Titulo", "Cuerpo del mensaje", "Li
 ```
 Puedes poner este define arriba en tu GM:
 ```c
-#define MensajeDiscord(%0,%1,%2,%3) CallRemoteFunction("MensajeDiscord", "ssss",%0,%1,%2,%3)
+#define		MensajeDiscord(%0,%1,%2,%3)		CallRemoteFunction("MensajeDiscord", "ssss",%0,%1,%2,%3)
 
 ```
 Con este define podrás enviar mensajes a discord con una syntaxis mucho más familiar:
 ```c
-MensajeDiscord("Titulo", "Cuerpo del mensaje", WEBHOOK_CANAL_DUDAS, SERVER_NAME);
+MensajeDiscord("Titulo", "Cuerpo del mensaje", WEBHOOK_CANAL_DUDAS, "Nombre server");
 ```
 
 En el link del webhook no insertar el enlace completo, solamente usa los parámetros necesarios, por ejemplo:
@@ -26,7 +26,7 @@ Solo debes usar esta parte:  ```1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6
 
 Puedes usar varios webhooks y usar el mismo nombre del servidor fácilmente definiendolos, por ejemplo:
  ```c
-#define MensajeDiscord(%0,%1,%2,%3) CallRemoteFunction("MensajeDiscord", "ssss",%0,%1,%2,%3)
+#define		MensajeDiscord(%0,%1,%2,%3)		CallRemoteFunction("MensajeDiscord", "ssss",%0,%1,%2,%3)
 #define WEBHOOK_CANAL_DUDAS "1517583558423195121/Xft8uhfaYp4QzWzxrxG_hvPvpWq6fuQBzpg40zKQwiLN3SYur9OeKWyJbq21At6Y"
 #define SERVER_NAME "Mi gran servidor RP"
 
