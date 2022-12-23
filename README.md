@@ -29,5 +29,5 @@ Puedes usar varios webhooks y usar el mismo nombre del servidor fácilmente defi
 
 //Entonces llamarías la función así:
 MensajeDiscord("Titulo", "Cuerpo del mensaje", WEBHOOK_CANAL_DUDAS, SERVER_NAME);
- ```c
+ ```
 
