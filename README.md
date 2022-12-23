@@ -2,6 +2,9 @@ Filterscript para enviar webhook a discord fácilmente desde SAMP.
 
 Este filterscript es gratuito, ```PROHIBIDO vender```.
 
+Descarga el archivo compilado, ponlo en tu carpeta ```filterscripts``` y en tu server.cfg añade  ```samp-discord``` en la línea  ```filterscripts```
+
+
 Para enviar un mensaje a discord usa:
 ```c
 CallRemoteFunction("MensajeDiscord", "ssss", "Titulo", "Cuerpo del mensaje", "Link del webhook", "Nombre del servidor");
