@@ -1,6 +1,6 @@
-#Filterscript para enviar webhook a discord fácilmente desde SAMP.
+Filterscript para enviar webhook a discord fácilmente desde SAMP.
 
-##Este filterscript es gratuito, PROHIBIDO vender.
+Este filterscript es gratuito, ```PROHIBIDO vender```.
 
 Para enviar un mensaje a discord usa:
 ```c
